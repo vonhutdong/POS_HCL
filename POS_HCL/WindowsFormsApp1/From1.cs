@@ -24,13 +24,10 @@ namespace WindowsFormsApp1
 
         }
 
-  
-
-        private void From1_Load(object sender, EventArgs e)
+        private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            dgvView.DataSource = bus_tk.GetListTK();
-            
-
+            frm_TrangChu fm = new frm_TrangChu();
+            fm.ShowDialog();
         }
     }
 }
